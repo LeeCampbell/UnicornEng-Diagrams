@@ -22,16 +22,25 @@
     <!-- Front face -->
     <rect x="40" y="100" width="120" height="80" class="box-face"/>
     <!-- Top face - deeper perspective -->
-    <!-- <polygon points="40,100 70,70 190,70 160,100" class="box-top"/> -->
     <polygon points="40,100 60,80 180,80 160,100" class="box-top"/>
     <!-- Right face - deeper perspective -->
-    <!-- <polygon points="160,100 190,70 190,150 160,180" class="box-right"/> -->
     <polygon points="160,100 180,80 180,160 160,180" class="box-right"/>
     
     <!-- Text -->
     <text x="100" y="130" class="box-text">Tier 1</text>
     <text x="100" y="150" class="box-text-small">Front End</text>
-    <text x="100" y="93" class="box-text" transform="skewX(-45) translate(95,0)">Feature A</text>
+
+
+    <!-- Tier 2 -->
+    <!-- Front face -->
+    <rect x="40" y="70" width="120" height="20" class="box-face"/>
+    <!-- Top face - deeper perspective -->
+    <polygon points="40,70 60,50 180,50 160,70" class="box-top"/>
+    <!-- Right face - deeper perspective -->
+    <polygon points="160,70 180,50 180,70 160,90" class="box-right"/>
+    <!-- Text -->
+    <text x="100" y="85" class="box-text">Tier 2</text>
+    <text x="100" y="70" class="box-text" transform="skewX(-45) translate(70,-5)">Feature A</text>
   </g>
   
   <!-- Web API Box -->
@@ -46,7 +55,17 @@
     <!-- Text -->
     <text x="280" y="130" class="box-text">Tier 1</text>
     <text x="280" y="150" class="box-text-small">Web API</text>
-    <text x="280" y="93" class="box-text" transform="skewX(-45) translate(95,0)">Feature A</text>
+    
+    <!-- Tier 2 -->
+    <!-- Front face -->
+    <rect x="220" y="70" width="120" height="20" class="box-face"/>
+    <!-- Top face - deeper perspective -->
+    <polygon points="220,70 240,50 360,50 340,70" class="box-top"/>
+    <!-- Right face - deeper perspective -->
+    <polygon points="340,70 360,50 360,70 340,90" class="box-right"/>
+    <!-- Text -->
+    <text x="280" y="85" class="box-text">Tier 2</text>
+    <text x="280" y="70" class="box-text" transform="skewX(-45) translate(70,-5)">Feature A</text>
   </g>
   
   <!-- Database Box -->
@@ -61,7 +80,17 @@
     <!-- Text -->
     <text x="470" y="130" class="box-text">Tier 1</text>
     <text x="470" y="150" class="box-text-small">Database</text>
-    <text x="470" y="93" class="box-text" transform="skewX(-45) translate(95,0)">Feature A</text>
+
+    <!-- Tier 2 -->
+    <!-- Front face -->
+    <rect x="410" y="70" width="120" height="20" class="box-face"/>
+    <!-- Top face - deeper perspective -->
+    <polygon points="410,70 430,50 550,50 530,70" class="box-top"/>
+    <!-- Right face - deeper perspective -->
+    <polygon points="530,70 550,50 550,70 530,90" class="box-right"/>
+    <!-- Text -->
+    <text x="470" y="85" class="box-text">Tier 2</text>
+    <text x="470" y="70" class="box-text" transform="skewX(-45) translate(70,-5)">Feature A</text>
   </g>
   
   <!-- Axis Labels and Arrows -->
