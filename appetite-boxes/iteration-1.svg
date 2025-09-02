@@ -27,7 +27,7 @@
     <polygon points="160,100 180,80 180,160 160,180" class="box-right"/>
     
     <!-- Text -->
-    <text x="100" y="130" class="box-text">Tier 1</text>
+    <text x="100" y="130" class="box-text">Tier 3</text>
     <text x="100" y="150" class="box-text-small">Front End</text>
     <text x="100" y="93" class="box-text" transform="skewX(-45) translate(95,0)">Feature A</text>
   </g>
@@ -42,7 +42,7 @@
     <polygon points="340,100 360,80 360,160 340,180" class="box-right"/>
     
     <!-- Text -->
-    <text x="280" y="130" class="box-text">Tier 1</text>
+    <text x="280" y="130" class="box-text">Tier 3</text>
     <text x="280" y="150" class="box-text-small">Web API</text>
     <text x="280" y="93" class="box-text" transform="skewX(-45) translate(95,0)">Feature A</text>
   </g>
@@ -57,7 +57,7 @@
     <polygon points="530,100 550,80 550,160 530,180" class="box-right"/>
     
     <!-- Text -->
-    <text x="470" y="130" class="box-text">Tier 1</text>
+    <text x="470" y="130" class="box-text">Tier 3</text>
     <text x="470" y="150" class="box-text-small">Database</text>
     <text x="470" y="93" class="box-text" transform="skewX(-45) translate(95,0)">Feature A</text>
   </g>
