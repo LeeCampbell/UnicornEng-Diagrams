@@ -1,0 +1,24 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./python.dockerfile
+
+    volumes:
+      - ../..:/workspaces:cached
+
+    # Overrides default command so things don't shut down after the process ends.
+    command: sleep infinity
+    
+  jupyter:
+    build:
+      context: .
+      dockerfile: ./jupyter.dockerfile
+    volumes:
+      - ../notebooks:/home/jovyan/work
+    # Add "forwardPorts": ["8888"] to **devcontainer.json** to forward Jupyter locally.
+    # (Adding the "ports" property to this file will not forward from a Codespace.)
+    ports:
+      - 8889:8888
+    command:
+      start-notebook.py --IdentityProvider.token=''
