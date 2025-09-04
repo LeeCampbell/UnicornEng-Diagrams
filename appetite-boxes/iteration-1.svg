@@ -1,4 +1,4 @@
-<svg width="650" height="270" viewBox="0 0 650 270" xmlns="http://www.w3.org/2000/svg">
+<svg width="645" height="160" viewBox="0 0 645 160" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       .box-face { fill: #b6d7ea; stroke: #4477aa; stroke-width: 2; }
@@ -20,58 +20,58 @@
   <!-- Front End Box -->
   <g>
     <!-- Front face -->
-    <rect x="40" y="100" width="120" height="80" class="box-face"/>
+    <rect x="50" y="30" width="120" height="80" class="box-face"/>
     <!-- Top face - deeper perspective -->
-    <polygon points="40,100 60,80 180,80 160,100" class="box-top"/>
+    <polygon points="50,30 70,10 190,10 170,30" class="box-top"/>
     <!-- Right face - deeper perspective -->
-    <polygon points="160,100 180,80 180,160 160,180" class="box-right"/>
+    <polygon points="170,30 190,10 190,90 170,110" class="box-right"/>
     
     <!-- Text -->
-    <text x="100" y="130" class="box-text">Tier 3</text>
-    <text x="100" y="150" class="box-text-small">Front End</text>
-    <text x="100" y="93" class="box-text" transform="skewX(-45) translate(95,0)">Feature A</text>
+    <text x="110" y="60" class="box-text">Tier 3</text>
+    <text x="110" y="80" class="box-text-small">Front End</text>
+    <text x="110" y="23" class="box-text" transform="skewX(-45) translate(25,0)">Feature A</text>
   </g>
   
   <!-- Web API Box -->
   <g>
     <!-- Front face -->
-    <rect x="220" y="100" width="120" height="80" class="box-face"/>
+    <rect x="230" y="30" width="120" height="80" class="box-face"/>
     <!-- Top face - deeper perspective -->
-    <polygon points="220,100 240,80 360,80 340,100" class="box-top"/>
+    <polygon points="230,30 250,10 370,10 350,30" class="box-top"/>
     <!-- Right face - deeper perspective -->
-    <polygon points="340,100 360,80 360,160 340,180" class="box-right"/>
+    <polygon points="350,30 370,10 370,90 350,110" class="box-right"/>
     
     <!-- Text -->
-    <text x="280" y="130" class="box-text">Tier 3</text>
-    <text x="280" y="150" class="box-text-small">Web API</text>
-    <text x="280" y="93" class="box-text" transform="skewX(-45) translate(95,0)">Feature A</text>
+    <text x="290" y="60" class="box-text">Tier 3</text>
+    <text x="290" y="80" class="box-text-small">Web API</text>
+    <text x="290" y="23" class="box-text" transform="skewX(-45) translate(25,0)">Feature A</text>
   </g>
   
   <!-- Database Box -->
   <g>
     <!-- Front face -->
-    <rect x="410" y="100" width="120" height="80" class="box-face"/>
+    <rect x="420" y="30" width="120" height="80" class="box-face"/>
     <!-- Top face - deeper perspective -->
-    <polygon points="410,100 430,80 550,80 530,100" class="box-top"/>
+    <polygon points="420,30 440,10 560,10 540,30" class="box-top"/>
     <!-- Right face - deeper perspective -->
-    <polygon points="530,100 550,80 550,160 530,180" class="box-right"/>
+    <polygon points="540,30 560,10 560,90 540,110" class="box-right"/>
     
     <!-- Text -->
-    <text x="470" y="130" class="box-text">Tier 3</text>
-    <text x="470" y="150" class="box-text-small">Database</text>
-    <text x="470" y="93" class="box-text" transform="skewX(-45) translate(95,0)">Feature A</text>
+    <text x="480" y="60" class="box-text">Tier 3</text>
+    <text x="480" y="80" class="box-text-small">Database</text>
+    <text x="480" y="23" class="box-text" transform="skewX(-45) translate(25,0)">Feature A</text>
   </g>
   
   <!-- Axis Labels and Arrows -->
   <!-- X-axis (Technical Scope) -->
-  <line x1="20" y1="200" x2="535" y2="200" class="axis-arrow"/>
-  <text x="270" y="220" class="axis-label" text-anchor="middle">Technical Scope</text>
+  <line x1="30" y1="130" x2="545" y2="130" class="axis-arrow"/>
+  <text x="280" y="150" class="axis-label" text-anchor="middle">Technical Scope</text>
   
   <!-- Y-axis (Service Tier) -->
-  <line x1="20" y1="200" x2="20" y2="90" class="axis-arrow"/>
-  <text x="10" y="145" class="axis-label" text-anchor="middle" transform="rotate(-90, 10, 145)">Service Tier</text>
+  <line x1="30" y1="130" x2="30" y2="20" class="axis-arrow"/>
+  <text x="20" y="75" class="axis-label" text-anchor="middle" transform="rotate(-90, 20, 75)">Service Tier</text>
   
   <!-- Z-axis (Feature Scope) -->
-  <line x1="535" y1="200" x2="615" y2="120" class="axis-arrow"/>
-  <text x="590" y="170" class="axis-label" text-anchor="middle" transform="rotate(-45, 590, 170)">Feature Scope</text>
+  <line x1="545" y1="130" x2="625" y2="50" class="axis-arrow"/>
+  <text x="600" y="100" class="axis-label" text-anchor="middle" transform="rotate(-45, 600, 100)">Feature Scope</text>
 </svg>
