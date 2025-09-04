@@ -1,0 +1,8 @@
+psycopg2-binary
+jupysql
+pandas
+pyarrow
+numpy
+matplotlib
+# ipython-sql==0.5.0    succeeded by jupysql
+# kotlin-jupyter-kernel
