@@ -1,0 +1,88 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .component-box {
+        fill: #b6d7ea;
+        stroke: #4477aa;
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .component-text {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #000;
+      }
+      .connection-line {
+        stroke: #4477aa;
+        stroke-width: 2;
+        marker-end: url(#arrowhead);
+      }
+      .data-flow {
+        stroke: #4477aa;
+        stroke-width: 2;
+        stroke-dasharray: 5,5;
+        marker-end: url(#arrowhead-blue);
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4477aa" />
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4477aa" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#4477aa">
+    Service Tier Architecture
+  </text>
+  
+  <!-- Component 1: SPA -->
+  <rect x="320" y="60" width="160" height="80" class="component-box"/>
+  <text x="400" y="100" class="component-text">1. SPA</text>
+  
+  <!-- Component 2: Web API -->
+  <rect x="320" y="200" width="160" height="80" class="component-box"/>
+  <text x="400" y="240" class="component-text">2. Web API</text>
+  
+  <!-- Component 3: Relational Database -->
+  <rect x="120" y="340" width="160" height="80" class="component-box"/>
+  <text x="200" y="380" class="component-text">3. Relational Database</text>
+  
+  <!-- Component 4: 3rd Party Integrations -->
+  <rect x="520" y="340" width="160" height="80" class="component-box"/>
+  <text x="600" y="370" class="component-text">4. 3rd Party</text>
+  <text x="600" y="390" class="component-text">Integrations</text>
+  
+  <!-- Component 5: Data Pipeline -->
+  <rect x="120" y="480" width="160" height="80" class="component-box"/>
+  <text x="200" y="520" class="component-text">5. Data Pipeline</text>
+  
+  <!-- Component 6: Data Warehouse -->
+  <rect x="520" y="480" width="160" height="80" class="component-box"/>
+  <text x="600" y="520" class="component-text">6. Data Warehouse</text>
+  
+  <!-- Connection Lines -->
+  <!-- SPA to Web API -->
+  <line x1="400" y1="140" x2="400" y2="200" class="connection-line"/>
+  
+  <!-- Web API to Relational Database -->
+  <line x1="360" y1="280" x2="240" y2="340" class="connection-line"/>
+  
+  <!-- Web API to 3rd Party Integrations -->
+  <line x1="440" y1="280" x2="560" y2="340" class="connection-line"/>
+  
+  <!-- Data Pipeline connections -->
+  <line x1="200" y1="420" x2="200" y2="480" class="data-flow"/>
+  <line x1="280" y1="520" x2="520" y2="520" class="data-flow"/>
+  
+  <!-- Legend -->
+  <text x="50" y="580" font-family="Arial, sans-serif" font-size="12" fill="#4477aa">
+    Legend: —— API Calls    - - - Data Flow
+  </text>
+</svg>
