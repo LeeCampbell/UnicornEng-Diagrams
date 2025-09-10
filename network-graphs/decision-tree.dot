@@ -1,0 +1,60 @@
+digraph GolfDecisionTree {
+    // Graph settings
+    rankdir=TB;
+    node [fontname="Arial", fontsize=10];
+    edge [fontname="Arial", fontsize=9, color="#4477aa"];
+    bgcolor=white;
+    
+    // Root node
+    root [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
+          label="Play     9\nDon't Play 5"];
+    outlook_node [shape=diamond, style=filled, fillcolor="#b6d7ea", color="none",
+          label="OUTLOOK?"];
+    
+    // Level 1 decision nodes
+    sunny_node [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
+                label="Play     2\nDon't Play 3"];
+    overcast_node [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
+                   label="Play     4\nDon't Play 0"];
+    rain_node [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
+               label="Play     3\nDon't Play 2"];
+    
+    // Level 2 decision nodes
+    humidity_node [shape=diamond, style=filled, fillcolor="#b6d7ea", color="none",
+                   label="HUMIDITY?"];
+    windy_node [shape=diamond, style=filled, fillcolor="#b6d7ea", color="none",
+                label="WINDY?"];
+    
+    // Leaf nodes
+    leaf1 [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
+           label="Play     2\nDon't Play 0"];
+    leaf2 [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
+           label="Play     0\nDon't Play 3"];
+    leaf3 [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
+           label="Play     0\nDon't Play 2"];
+    leaf4 [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
+           label="Play     3\nDon't Play 0"];
+    
+    // Connections from root
+    root -> outlook_node
+    outlook_node -> sunny_node [label="sunny"];
+    outlook_node -> overcast_node [label="overcast"];
+    outlook_node -> rain_node [label="rain"];
+    
+    // Connections from sunny node
+    sunny_node -> humidity_node;
+    
+    // Connections from humidity node
+    humidity_node -> leaf1 [label="<= 70"];
+    humidity_node -> leaf2 [label="> 70"];
+    
+    // Overcast is a leaf (direct decision)
+    // No further connections needed for overcast_node
+    
+    // Connections from rain node
+    rain_node -> windy_node;
+    
+    // Connections from windy node
+    windy_node -> leaf3 [label="TRUE"];
+    windy_node -> leaf4 [label="FALSE"];
+}
