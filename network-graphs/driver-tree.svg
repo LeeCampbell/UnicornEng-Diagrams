@@ -1,0 +1,138 @@
+<svg width="850" height="520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .level-label {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        text-anchor: start;
+        fill: #333;
+      }
+      .node-text {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .node-primary {
+        fill: #7db8da;
+        stroke: #4477aa;
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .node-secondary {
+        fill: #b6d7ea;
+        stroke: #4477aa;
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .node-tertiary {
+        fill: #b6d7ea;
+        stroke: #4477aa;
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .text-white { fill: black; }
+      .text-black { fill: black; }
+      .connection-line {
+        stroke: #4477aa;
+        stroke-width: 2;
+        fill: none;
+      }
+      .level-bg {
+        fill: white;
+        opacity: 1.0;
+        rx: 8;
+        ry: 8;
+      }
+    </style>
+  </defs>
+  
+  <!-- Level backgrounds -->
+  <rect x="0" y="20" width="850" height="80" rx="8" ry="8" class="level-bg"/>
+  <rect x="0" y="120" width="850" height="80" rx="8" ry="8" class="level-bg"/>
+  <rect x="0" y="220" width="850" height="280" rx="8" ry="8" class="level-bg"/>
+  
+  <!-- Level Labels -->
+  <text x="30" y="60" class="level-label">What</text>
+  <text x="30" y="160" class="level-label">Driver</text>
+  <text x="30" y="280" class="level-label">How</text>
+  
+  <!-- What Level -->
+  <rect x="500" y="30" width="120" height="60" rx="8" ry="8" class="node-primary"/>
+  <text x="560" y="60" class="node-text text-white">New Users</text>
+  
+  <!-- Driver Level -->
+  <rect x="350" y="130" width="120" height="60" rx="8" ry="8" class="node-primary"/>
+  <text x="410" y="160" class="node-text text-white">Click to Reg</text>
+  
+  <rect x="630" y="130" width="120" height="60" rx="8" ry="8" class="node-tertiary"/>
+  <text x="690" y="160" class="node-text text-black">Impressions</text>
+  
+  <!-- How Level - Tier 1 -->
+  <rect x="250" y="230" width="120" height="60" rx="8" ry="8" class="node-primary"/>
+  <text x="310" y="260" class="node-text text-white">Click to Land</text>
+  
+  <rect x="400" y="230" width="120" height="60" rx="8" ry="8" class="node-secondary"/>
+  <text x="460" y="250" class="node-text text-white">Time To</text>
+  <text x="460" y="270" class="node-text text-white">Register</text>
+  
+  <rect x="550" y="230" width="120" height="60" rx="8" ry="8" class="node-tertiary"/>
+  <text x="610" y="260" class="node-text text-black">Ad Spend</text>
+  
+  <rect x="700" y="230" width="120" height="60" rx="8" ry="8" class="node-tertiary"/>
+  <text x="760" y="260" class="node-text text-black">Channels</text>
+  
+  <!-- How Level - Tier 2 -->
+  <rect x="250" y="330" width="120" height="60" rx="8" ry="8" class="node-primary"/>
+  <text x="310" y="360" class="node-text text-white">Web Vitals</text>
+  
+  <rect x="400" y="330" width="120" height="60" rx="8" ry="8" class="node-secondary"/>
+  <text x="460" y="350" class="node-text text-white">Page Load</text>
+  <text x="460" y="370" class="node-text text-white">Time</text>
+  
+  <rect x="530" y="330" width="120" height="60" rx="8" ry="8" class="node-secondary"/>
+  <text x="590" y="350" class="node-text text-white">Interaction</text>
+  <text x="590" y="370" class="node-text text-white">events</text>
+  
+  <!-- How Level - Tier 3 -->
+  <rect x="120" y="430" width="120" height="60" rx="8" ry="8" class="node-primary"/>
+  <text x="180" y="450" class="node-text text-white">Page Load</text>
+  <text x="180" y="470" class="node-text text-white">Time</text>
+  
+  <rect x="250" y="430" width="120" height="60" rx="8" ry="8" class="node-primary"/>
+  <text x="310" y="450" class="node-text text-white">Semantic</text>
+  <text x="310" y="470" class="node-text text-white">Content</text>
+  
+  <rect x="380" y="430" width="120" height="60" rx="8" ry="8" class="node-primary"/>
+  <text x="440" y="460" class="node-text text-white">Secure</text>
+  
+  <!-- Connection Lines -->
+  <!-- From New Users -->
+  <line x1="560" y1="90" x2="410" y2="130" class="connection-line"/>
+  <line x1="560" y1="90" x2="690" y2="130" class="connection-line"/>
+  
+  <!-- From Click to Reg -->
+  <line x1="410" y1="190" x2="310" y2="230" class="connection-line"/>
+  <line x1="410" y1="190" x2="460" y2="230" class="connection-line"/>
+  
+  <!-- From Impressions -->
+  <line x1="690" y1="190" x2="610" y2="230" class="connection-line"/>
+  <line x1="690" y1="190" x2="760" y2="230" class="connection-line"/>
+  
+  <!-- From Click to Land -->
+  <line x1="310" y1="290" x2="310" y2="330" class="connection-line"/>
+  
+  <!-- From Time To Register -->
+  <line x1="460" y1="290" x2="460" y2="330" class="connection-line"/>
+  <line x1="460" y1="290" x2="590" y2="330" class="connection-line"/>
+  
+  <!-- From Web Vitals -->
+  <line x1="310" y1="390" x2="180" y2="430" class="connection-line"/>
+  <line x1="310" y1="390" x2="310" y2="430" class="connection-line"/>
+  <line x1="310" y1="390" x2="440" y2="430" class="connection-line"/>
+</svg>
