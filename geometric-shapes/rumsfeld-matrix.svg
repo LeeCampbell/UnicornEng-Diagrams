@@ -1,0 +1,129 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .matrix-title {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #4477aa;
+      }
+      .axis-label {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #4477aa;
+      }
+      .quadrant-label {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: black;
+      }
+      .quadrant-tag {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        font-style: italic;
+        text-anchor: middle;
+        fill: black;
+      }
+      .quadrant-description {
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        text-anchor: middle;
+        fill: black;
+      }
+      .grid-line {
+        stroke: #4477aa;
+        stroke-width: 3;
+        fill: none;
+      }
+      .arrow {
+        stroke: #4477aa;
+        stroke-width: 2;
+        fill: #4477aa;
+        marker-end: url(#arrowhead);
+      }
+      .quadrant1 { fill: #4477aa; } /* Known Knowns - Dark Blue */
+      .quadrant2 { fill: #7db8da; } /* Known Unknowns - Medium Blue */
+      .quadrant3 { fill: #b6d7ea; } /* Unknown Knowns - Light Blue */
+      .quadrant4 { fill: #d4e6f1; } /* Unknown Unknowns - Very Light Blue */
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4477aa" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="300" y="30" class="matrix-title">Rumsfeld Matrix</text>
+  
+  <!-- Matrix Background -->
+  <rect x="100" y="80" width="400" height="400" fill="white" stroke="#4477aa" stroke-width="2"/>
+  
+  <!-- Quadrants -->
+  <!-- Q1: Things I Know I Know -->
+  <rect x="300" y="80" width="200" height="200" class="quadrant1"/>
+  
+  <!-- Q2: Things I Know I Don't Know -->
+  <rect x="100" y="80" width="200" height="200" class="quadrant2"/>
+  
+  <!-- Q3: Things I Don't Know I Know -->
+  <rect x="300" y="280" width="200" height="200" class="quadrant3"/>
+  
+  <!-- Q4: Things I Don't Know I Don't Know -->
+  <rect x="100" y="280" width="200" height="200" class="quadrant4"/>
+  
+  <!-- Grid Lines -->
+  <line x1="300" y1="80" x2="300" y2="480" class="grid-line"/>
+  <line x1="100" y1="280" x2="500" y2="280" class="grid-line"/>
+  
+  <!-- Quadrant Labels and Descriptions -->
+  <!-- Q1: Known Knowns -->
+  <text x="400" y="120" class="quadrant-label">KNOWN</text>
+  <text x="400" y="140" class="quadrant-label">KNOWNS</text>
+  <text x="400" y="170" class="quadrant-tag">Facts</text>
+  <text x="400" y="195" class="quadrant-description">Things I know I know</text>
+  <text x="400" y="210" class="quadrant-description">Documented facts, skills,</text>
+  <text x="400" y="225" class="quadrant-description">established processes</text>
+  
+  <!-- Q2: Known Unknowns -->
+  <text x="200" y="120" class="quadrant-label">KNOWN</text>
+  <text x="200" y="140" class="quadrant-label">UNKNOWNS</text>
+  <text x="200" y="170" class="quadrant-tag">Assumptions</text>
+  <text x="200" y="195" class="quadrant-description">Things I know I don't know</text>
+  <text x="200" y="210" class="quadrant-description">Identified risks, gaps,</text>
+  <text x="200" y="225" class="quadrant-description">missing information</text>
+  
+  <!-- Q3: Unknown Knowns -->
+  <text x="400" y="320" class="quadrant-label">UNKNOWN</text>
+  <text x="400" y="340" class="quadrant-label">KNOWNS</text>
+  <text x="400" y="370" class="quadrant-tag">Intuition</text>
+  <text x="400" y="395" class="quadrant-description">Things I don't know I know</text>
+  <text x="400" y="410" class="quadrant-description">Unconscious competence,</text>
+  <text x="400" y="425" class="quadrant-description">tacit knowledge</text>
+  
+  <!-- Q4: Unknown Unknowns -->
+  <text x="200" y="320" class="quadrant-label">UNKNOWN</text>
+  <text x="200" y="340" class="quadrant-label">UNKNOWNS</text>
+  <text x="200" y="370" class="quadrant-tag">Surprises</text>
+  <text x="200" y="395" class="quadrant-description">Things I don't know I don't know</text>
+  <text x="200" y="410" class="quadrant-description">Blind spots, surprises,</text>
+  <text x="200" y="425" class="quadrant-description">black swan events</text>
+  
+  <!-- Axis Labels with Arrows -->
+  <!-- Knowledge Awareness (Y-axis) -->
+  <line x1="70" y1="460" x2="70" y2="100" class="arrow"/>
+  <text x="45" y="280" class="axis-label" transform="rotate(-90 45 280)">I KNOW</text>
+  <text x="70" y="95" class="axis-label" style="font-size: 12px;">Yes</text>
+  <text x="70" y="475" class="axis-label" style="font-size: 12px;">No</text>
+  
+  <!-- Knowledge Existence (X-axis) -->
+  <line x1="120" y1="510" x2="480" y2="510" class="arrow"/>
+  <text x="300" y="530" class="axis-label">KNOWLEDGE EXISTS</text>
+  <text x="130" y="525" class="axis-label" style="font-size: 12px;">No</text>
+  <text x="470" y="525" class="axis-label" style="font-size: 12px;">Yes</text>
+</svg>

@@ -1,0 +1,174 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .matrix-title {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #4477aa;
+      }
+      .axis-label {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #4477aa;
+      }
+      .quadrant-label {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: black;
+      }
+      .quadrant-tag {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        font-style: italic;
+        text-anchor: middle;
+        fill: black;
+      }
+      .quadrant-description {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        text-anchor: middle;
+        fill: black;
+      }
+      .grid-line {
+        stroke: #4477aa;
+        stroke-width: 2;
+        fill: none;
+      }
+      .separator {
+        stroke: #4477aa;
+        stroke-width: 3;
+        fill: none;
+      }
+      .arrow {
+        stroke: #4477aa;
+        stroke-width: 2;
+        fill: #4477aa;
+        marker-end: url(#arrowhead);
+      }
+      .quadrant1 { fill: #4477aa; }
+      .quadrant2 { fill: #7db8da; }
+      .quadrant3 { fill: #b6d7ea; }
+      .quadrant4 { fill: #d4e6f1; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" 
+            refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4477aa" />
+    </marker>
+  </defs>
+  
+  <!-- Eisenhower Matrix (Left Side) -->
+  <g id="eisenhower">
+    <!-- Title -->
+    <text x="275" y="30" class="matrix-title">Eisenhower Matrix</text>
+    
+    <!-- Matrix Background -->
+    <rect x="75" y="80" width="400" height="400" fill="white" stroke="#4477aa" stroke-width="2"/>
+    
+    <!-- Quadrants -->
+    <rect x="275" y="80" width="200" height="200" class="quadrant1"/>
+    <rect x="75" y="80" width="200" height="200" class="quadrant2"/>
+    <rect x="275" y="280" width="200" height="200" class="quadrant3"/>
+    <rect x="75" y="280" width="200" height="200" class="quadrant4"/>
+    
+    <!-- Grid Lines -->
+    <line x1="275" y1="80" x2="275" y2="480" class="grid-line"/>
+    <line x1="75" y1="280" x2="475" y2="280" class="grid-line"/>
+    
+    <!-- Quadrant Labels -->
+    <text x="375" y="160" class="quadrant-label">DO FIRST</text>
+    <text x="375" y="180" class="quadrant-description">Important &amp; Urgent</text>
+    <text x="375" y="195" class="quadrant-description">Crisis, Emergencies</text>
+    
+    <text x="175" y="160" class="quadrant-label">SCHEDULE</text>
+    <text x="175" y="180" class="quadrant-description">Important &amp; Not Urgent</text>
+    <text x="175" y="195" class="quadrant-description">Planning, Prevention</text>
+    
+    <text x="375" y="360" class="quadrant-label">DELEGATE</text>
+    <text x="375" y="380" class="quadrant-description">Not Important &amp; Urgent</text>
+    <text x="375" y="395" class="quadrant-description">Interruptions, Some Calls</text>
+    
+    <text x="175" y="360" class="quadrant-label">ELIMINATE</text>
+    <text x="175" y="380" class="quadrant-description">Not Important &amp; Not Urgent</text>
+    <text x="175" y="395" class="quadrant-description">Time Wasters, Trivia</text>
+    
+    <!-- Axis Labels -->
+    <line x1="50" y1="460" x2="50" y2="100" class="arrow"/>
+    <text x="30" y="280" class="axis-label" transform="rotate(-90 30 280)">IMPORTANCE</text>
+    <text x="50" y="95" class="axis-label" style="font-size: 10px;">High</text>
+    <text x="50" y="475" class="axis-label" style="font-size: 10px;">Low</text>
+    
+    <line x1="95" y1="510" x2="455" y2="510" class="arrow"/>
+    <text x="275" y="530" class="axis-label">URGENCY</text>
+    <text x="105" y="525" class="axis-label" style="font-size: 10px;">Low</text>
+    <text x="445" y="525" class="axis-label" style="font-size: 10px;">High</text>
+  </g>
+  
+  <!-- Vertical Separator -->
+  <line x1="600" y1="50" x2="600" y2="550" class="separator"/>
+  
+  <!-- Rumsfeld Matrix (Right Side) -->
+  <g id="rumsfeld">
+    <!-- Title -->
+    <text x="900" y="30" class="matrix-title">Rumsfeld Matrix</text>
+    
+    <!-- Matrix Background -->
+    <rect x="700" y="80" width="400" height="400" fill="white" stroke="#4477aa" stroke-width="2"/>
+    
+    <!-- Quadrants -->
+    <rect x="900" y="80" width="200" height="200" class="quadrant1"/>
+    <rect x="700" y="80" width="200" height="200" class="quadrant2"/>
+    <rect x="900" y="280" width="200" height="200" class="quadrant3"/>
+    <rect x="700" y="280" width="200" height="200" class="quadrant4"/>
+    
+    <!-- Grid Lines -->
+    <line x1="900" y1="80" x2="900" y2="480" class="grid-line"/>
+    <line x1="700" y1="280" x2="1100" y2="280" class="grid-line"/>
+    
+    <!-- Quadrant Labels -->
+    <text x="1000" y="120" class="quadrant-label">KNOWN</text>
+    <text x="1000" y="140" class="quadrant-label">KNOWNS</text>
+    <text x="1000" y="165" class="quadrant-tag">Facts</text>
+    <text x="1000" y="185" class="quadrant-description">Things I know I know</text>
+    <text x="1000" y="200" class="quadrant-description">Documented facts, skills,</text>
+    <text x="1000" y="215" class="quadrant-description">established processes</text>
+    
+    <text x="800" y="120" class="quadrant-label">KNOWN</text>
+    <text x="800" y="140" class="quadrant-label">UNKNOWNS</text>
+    <text x="800" y="165" class="quadrant-tag">Assumptions</text>
+    <text x="800" y="185" class="quadrant-description">Things I know I don't know</text>
+    <text x="800" y="200" class="quadrant-description">Identified risks, gaps,</text>
+    <text x="800" y="215" class="quadrant-description">missing information</text>
+    
+    <text x="1000" y="320" class="quadrant-label">UNKNOWN</text>
+    <text x="1000" y="340" class="quadrant-label">KNOWNS</text>
+    <text x="1000" y="365" class="quadrant-tag">Intuition</text>
+    <text x="1000" y="385" class="quadrant-description">Things I don't know I know</text>
+    <text x="1000" y="400" class="quadrant-description">Unconscious competence,</text>
+    <text x="1000" y="415" class="quadrant-description">tacit knowledge</text>
+    
+    <text x="800" y="320" class="quadrant-label">UNKNOWN</text>
+    <text x="800" y="340" class="quadrant-label">UNKNOWNS</text>
+    <text x="800" y="365" class="quadrant-tag">Surprises</text>
+    <text x="800" y="385" class="quadrant-description">Things I don't know I don't know</text>
+    <text x="800" y="400" class="quadrant-description">Blind spots, surprises,</text>
+    <text x="800" y="415" class="quadrant-description">black swan events</text>
+    
+    <!-- Axis Labels -->
+    <line x1="675" y1="460" x2="675" y2="100" class="arrow"/>
+    <text x="655" y="280" class="axis-label" transform="rotate(-90 655 280)">I KNOW</text>
+    <text x="675" y="95" class="axis-label" style="font-size: 10px;">Yes</text>
+    <text x="675" y="475" class="axis-label" style="font-size: 10px;">No</text>
+    
+    <line x1="720" y1="510" x2="1080" y2="510" class="arrow"/>
+    <text x="900" y="530" class="axis-label">KNOWLEDGE EXISTS</text>
+    <text x="730" y="525" class="axis-label" style="font-size: 10px;">No</text>
+    <text x="1070" y="525" class="axis-label" style="font-size: 10px;">Yes</text>
+  </g>
+</svg>
