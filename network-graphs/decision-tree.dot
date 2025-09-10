@@ -7,17 +7,29 @@ digraph GolfDecisionTree {
     
     // Root node
     root [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
-          label="Play     9\nDon't Play 5"];
+          label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                  <TR><TD ALIGN="LEFT">Play</TD><TD ALIGN="RIGHT">9</TD></TR>
+                  <TR><TD ALIGN="LEFT">Don't Play</TD><TD ALIGN="RIGHT">5</TD></TR>
+                </TABLE>>];
     outlook_node [shape=diamond, style=filled, fillcolor="#b6d7ea", color="none",
           label="Outlook?"];
     
     // Level 1 decision nodes
     sunny_node [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
-                label="Play     2\nDon't Play 3"];
+                label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                  <TR><TD ALIGN="LEFT">Play</TD><TD ALIGN="RIGHT">2</TD></TR>
+                  <TR><TD ALIGN="LEFT">Don't Play</TD><TD ALIGN="RIGHT">3</TD></TR>
+                </TABLE>>];
     overcast_node [shape=box, style="filled,rounded", fillcolor="#7db8da", color="#4477aa",
-                   label="Play     4\nDon't Play 0"];
+                   label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                     <TR><TD ALIGN="LEFT">Play</TD><TD ALIGN="RIGHT">4</TD></TR>
+                     <TR><TD ALIGN="LEFT">Don't Play</TD><TD ALIGN="RIGHT">0</TD></TR>
+                   </TABLE>>];
     rain_node [shape=box, style="filled,rounded", fillcolor="#b6d7ea", color="#4477aa",
-               label="Play     3\nDon't Play 2"];
+               label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                 <TR><TD ALIGN="LEFT">Play</TD><TD ALIGN="RIGHT">3</TD></TR>
+                 <TR><TD ALIGN="LEFT">Don't Play</TD><TD ALIGN="RIGHT">2</TD></TR>
+               </TABLE>>];
     
     // Level 2 decision nodes
     humidity_node [shape=diamond, style=filled, fillcolor="#b6d7ea", color="none",
@@ -27,13 +39,25 @@ digraph GolfDecisionTree {
     
     // Leaf nodes
     leaf1 [shape=box, style="filled,rounded", fillcolor="#7db8da", color="#4477aa",
-           label="Play     2\nDon't Play 0"];
+           label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+             <TR><TD ALIGN="LEFT">Play</TD><TD ALIGN="RIGHT">2</TD></TR>
+             <TR><TD ALIGN="LEFT">Don't Play</TD><TD ALIGN="RIGHT">0</TD></TR>
+           </TABLE>>];
     leaf2 [shape=box, style="filled,rounded", fillcolor="#888", color="#4477aa",
-           label="Play     0\nDon't Play 3"];
+           label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+             <TR><TD ALIGN="LEFT">Play</TD><TD ALIGN="RIGHT">0</TD></TR>
+             <TR><TD ALIGN="LEFT">Don't Play</TD><TD ALIGN="RIGHT">3</TD></TR>
+           </TABLE>>];
     leaf3 [shape=box, style="filled,rounded", fillcolor="#888", color="#4477aa",
-           label="Play     0\nDon't Play 2"];
+           label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+             <TR><TD ALIGN="LEFT">Play</TD><TD ALIGN="RIGHT">0</TD></TR>
+             <TR><TD ALIGN="LEFT">Don't Play</TD><TD ALIGN="RIGHT">2</TD></TR>
+           </TABLE>>];
     leaf4 [shape=box, style="filled,rounded", fillcolor="#7db8da", color="#4477aa",
-           label="Play     3\nDon't Play 0"];
+           label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+             <TR><TD ALIGN="LEFT">Play</TD><TD ALIGN="RIGHT">3</TD></TR>
+             <TR><TD ALIGN="LEFT">Don't Play</TD><TD ALIGN="RIGHT">0</TD></TR>
+           </TABLE>>];
     
     // Connections from root
     root -> outlook_node
