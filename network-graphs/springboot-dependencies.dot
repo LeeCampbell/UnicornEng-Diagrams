@@ -1,0 +1,85 @@
+digraph SpringBootDependencies {
+    // Graph layout settings
+    rankdir=TB;
+    node [shape=box, style=filled, fillcolor="#b6d7ea", color="#4477aa"];
+    edge [color="#4477aa"];
+    
+    // Graph styling
+    bgcolor=white;
+    
+    // Root node
+    demo;
+    
+    // Main dependencies
+    "spring-boot-starter";
+    "spring-boot-autoconfigure";
+    "spring-boot-starter-logging";
+    "javax.annotation-api";
+    snakeyaml;
+    
+    // Spring Boot core modules
+    "spring-boot";
+    "spring-context";
+    "spring-app";
+    "spring-beans";
+    "spring-expression";
+    "spring-core";
+    "spring-jcl";
+    
+    // Logging dependencies
+    "logback-classic";
+    "jul-to-slf4j";
+    "log4j-to-slf4j";
+    "logback-core";
+    "slf4j-api";
+    "log4j-api";
+    
+    // Dependencies from demo
+    demo -> "spring-boot-starter";
+    
+    // Dependencies from spring-boot-starter
+    "spring-boot-starter" -> "spring-boot-autoconfigure";
+    "spring-boot-starter" -> "spring-boot";
+    "spring-boot-starter" -> "spring-boot-starter-logging";
+    "spring-boot-starter" -> "javax.annotation-api";
+    "spring-boot-starter" -> snakeyaml;
+    
+    // Dependencies from spring-boot-autoconfigure
+    "spring-boot-autoconfigure" -> "spring-boot";
+    
+    // Dependencies from spring-boot
+    "spring-boot" -> "spring-context";
+    "spring-boot" -> "spring-core";
+    
+    // Dependencies from spring-context
+    "spring-context" -> "spring-app";
+    "spring-context" -> "spring-beans";
+    "spring-context" -> "spring-core";
+    "spring-context" -> "spring-expression";
+    
+    // Dependencies from spring-app
+    "spring-app" -> "spring-beans";
+    "spring-app" -> "spring-core";
+    
+    // Dependencies from spring-beans
+    "spring-beans" -> "spring-core";
+    
+    // Dependencies from spring-expression
+    "spring-expression" -> "spring-core";
+    
+    // Dependencies from spring-core
+    "spring-core" -> "spring-jcl";
+    
+    // Logging dependencies
+    "spring-boot-starter-logging" -> "logback-classic";
+    "spring-boot-starter-logging" -> "jul-to-slf4j";
+    "spring-boot-starter-logging" -> "log4j-to-slf4j";
+    
+    "logback-classic" -> "logback-core";
+    "logback-classic" -> "slf4j-api";
+    
+    "jul-to-slf4j" -> "slf4j-api";
+    
+    "log4j-to-slf4j" -> "slf4j-api";
+    "log4j-to-slf4j" -> "log4j-api";
+}

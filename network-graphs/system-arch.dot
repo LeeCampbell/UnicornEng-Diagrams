@@ -1,0 +1,44 @@
+digraph SystemArchitecture {
+    // Graph layout settings
+    rankdir=LR;
+    node [shape=ellipse, style=filled, fillcolor="#b6d7ea", color="#4477aa"];
+    edge [color="#4477aa"];
+    
+    // Graph styling
+    bgcolor=white;
+    
+    // Define all nodes
+    MobileClient;
+    WebClient;
+    APIClient;
+    LoadBalancer;
+    Auth;
+    Customer;
+    Product;
+    Orders;
+    Inventory;
+    
+    // Client connections to LoadBalancer
+    MobileClient -> LoadBalancer;
+    WebClient -> LoadBalancer;
+    APIClient -> LoadBalancer;
+    
+    // LoadBalancer connections to services
+    LoadBalancer -> Auth;
+    LoadBalancer -> Customer;
+    LoadBalancer -> Product;
+    LoadBalancer -> Orders;
+    LoadBalancer -> Inventory;
+    
+    // Auth service connections
+    Auth -> Customer;
+    
+    // Customer service connections
+    Customer -> Orders;
+    
+    // Orders service connections
+    Orders -> Inventory;
+    
+    // Product service connections
+    Product -> Inventory;
+}
