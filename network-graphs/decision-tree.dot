@@ -1,6 +1,6 @@
 digraph GolfDecisionTree {
     // Graph settings
-    rankdir=TB;
+    rankdir=LR;
     node [fontname="Arial", fontsize=10];
     edge [fontname="Arial", fontsize=9, color="#4477aa"];
     bgcolor=white;
