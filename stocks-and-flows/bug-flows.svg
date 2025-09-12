@@ -1,0 +1,73 @@
+<svg width="760" height="190" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="360" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4477aa">
+    Bug Backlog: Stock and Flow Analysis
+  </text>
+  
+  <!-- Central stock (bug backlog) -->
+  <rect x="280" y="60" width="200" height="120" fill="#d4e6f1" stroke="#4477aa" stroke-width="3" rx="10"/>
+  
+  <!-- Stock label and count -->
+  <text x="380" y="90" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4477aa">
+    BUG BACKLOG
+  </text>
+  <text x="380" y="120" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#4477aa">
+    247 bugs
+  </text>
+  <text x="380" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6c757d">
+    (Current Stock)
+  </text>
+  <text x="380" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4477aa" font-weight="bold">
+    Growing at +4 bugs/week
+  </text>
+  
+  <!-- Inflow box -->
+  <rect x="20" y="70" width="180" height="100" fill="#b6d7ea" stroke="#7db8da" stroke-width="2" rx="8"/>
+  <text x="110" y="90" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#4477aa">
+    INFLOW SOURCES
+  </text>
+  <text x="110" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4477aa">
+    Customer: 5 bugs/week
+  </text>
+  <text x="110" y="125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4477aa">
+    Regression: 4 bugs/week
+  </text>
+  <text x="110" y="140" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4477aa">
+    New features: 3 bugs/week
+  </text>
+  <rect x="50" y="150" width="120" height="15" fill="#4477aa" rx="3"/>
+  <text x="110" y="161" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Total: 12 bugs/week
+  </text>
+  
+  <!-- Outflow box -->
+  <rect x="560" y="70" width="180" height="100" fill="#7db8da" stroke="#4477aa" stroke-width="2" rx="8"/>
+  <text x="650" y="90" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#4477aa">
+    OUTFLOW DRAINS
+  </text>
+  <text x="650" y="110" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4477aa">
+    Sprint work: 6 bugs/week
+  </text>
+  <text x="650" y="125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4477aa">
+    Hotfixes: 2 bugs/week
+  </text>
+  <rect x="590" y="150" width="120" height="15" fill="#4477aa" rx="3"/>
+  <text x="650" y="161" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Total: 8 bugs/week
+  </text>
+  
+  <!-- Flow arrows -->
+  <g stroke-width="4" fill="none" marker-end="url(#blueArrow)">
+    <!-- Inflow -->
+    <path d="M 240 120 L 260 120" stroke="#4477aa"/>
+    <!-- Outflow -->
+    <path d="M 520 120 L 540 120" stroke="#4477aa"/>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="blueArrow" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#4477aa"/>
+    </marker>
+  </defs>
+</svg>
