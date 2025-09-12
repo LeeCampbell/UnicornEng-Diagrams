@@ -1,4 +1,4 @@
-<svg width="550" height="540" xmlns="http://www.w3.org/2000/svg">
+<svg width="455" height="400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       .cube-title {
@@ -43,10 +43,10 @@
   </defs>
   
   <!-- Title -->
-  <text x="300" y="60" class="cube-title">DORA Metrics Cube</text>
+  <text x="240" y="40" class="cube-title">DORA Metrics Cube</text>
   
   <!-- 3D Cube -->
-  <g transform="translate(150, 100)">
+  <g transform="translate(90, 65)">
     <!-- Front face -->
     <rect x="0" y="50" width="200" height="200" class="cube-face-front"/>
     
@@ -60,38 +60,30 @@
   <!-- Axis Lines and Labels -->
   <!-- Release Cadence (Y-axis - vertical) -->
   <g>
-    <line x1="120" y1="350" x2="120" y2="120" class="arrow"/>
-    <text x="100" y="235" class="axis-label" transform="rotate(-90 100 235)" text-anchor="middle">Release Cadence</text>
+    <line x1="60" y1="315" x2="60" y2="85" class="arrow"/>
+    <text x="40" y="200" class="axis-label" transform="rotate(-90 40 200)" text-anchor="middle">Release Cadence</text>
   </g>
   
   <!-- Change Failure Rate (X-axis - horizontal bottom) -->
   <g>
-    <line x1="150" y1="380" x2="380" y2="380" class="arrow"/>
-    <text x="265" y="410" class="axis-label" text-anchor="middle">Change Failure Rate</text>
+    <line x1="90" y1="345" x2="320" y2="345" class="arrow"/>
+    <text x="205" y="375" class="axis-label" text-anchor="middle">Change Failure Rate</text>
   </g>
   
   <!-- Lead Time (Z-axis - diagonal) -->
   <g>
-    <line x1="390" y1="350" x2="460" y2="280" class="arrow"/>
-    <text x="455" y="315" class="axis-label" transform="rotate(-45 475 315)" text-anchor="middle">Lead Time</text>
+    <line x1="330" y1="315" x2="400" y2="245" class="arrow"/>
+    <text x="395" y="280" class="axis-label" transform="rotate(-45 415 280)" text-anchor="middle">Lead Time</text>
   </g>
   
   <!-- Axis Direction Indicators -->
-  <text x="115" y="110" class="axis-label" style="font-size: 12px; text-anchor: middle;">High</text>
-  <text x="115" y="365" class="axis-label" style="font-size: 12px; text-anchor: middle;">Low</text>
+  <text x="55" y="75" class="axis-label" style="font-size: 12px; text-anchor: middle;">High</text>
+  <text x="55" y="330" class="axis-label" style="font-size: 12px; text-anchor: middle;">Low</text>
   
-  <text x="140" y="395" class="axis-label" style="font-size: 12px; text-anchor: middle;">Low</text>
-  <text x="395" y="395" class="axis-label" style="font-size: 12px; text-anchor: middle;">High</text>
+  <text x="80" y="360" class="axis-label" style="font-size: 12px; text-anchor: middle;">Low</text>
+  <text x="335" y="360" class="axis-label" style="font-size: 12px; text-anchor: middle;">High</text>
   
-  <text x="385" y="365" class="axis-label" style="font-size: 12px; text-anchor: middle;">Short</text>
-  <text x="465" y="270" class="axis-label" style="font-size: 12px; text-anchor: middle;">Long</text>
+  <text x="325" y="330" class="axis-label" style="font-size: 12px; text-anchor: middle;">Short</text>
+  <text x="405" y="235" class="axis-label" style="font-size: 12px; text-anchor: middle;">Long</text>
   
-  <!-- Legend -->
-  <g transform="translate(50, 450)">
-    <text x="0" y="0" class="axis-label" style="font-size: 14px; font-weight: bold;">DORA Four Key Metrics:</text>
-    <text x="0" y="20" style="font-family: Arial, sans-serif; font-size: 12px; fill: #4477aa;">• Deployment Frequency (Release Cadence)</text>
-    <text x="0" y="35" style="font-family: Arial, sans-serif; font-size: 12px; fill: #4477aa;">• Lead Time for Changes</text>
-    <text x="0" y="50" style="font-family: Arial, sans-serif; font-size: 12px; fill: #4477aa;">• Change Failure Rate</text>
-    <text x="250" y="20" style="font-family: Arial, sans-serif; font-size: 12px; fill: #4477aa;">• Mean Time to Recovery (implied)</text>
-  </g>
 </svg>
