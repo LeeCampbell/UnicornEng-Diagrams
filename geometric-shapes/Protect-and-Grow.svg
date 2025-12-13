@@ -1,0 +1,104 @@
+<svg width="600" height="645" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .matrix-title {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #4477aa;
+      }
+      .axis-label {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #4477aa;
+      }
+      .quadrant-label {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: black;
+      }
+      .bullet-item {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        text-anchor: start;
+        fill: black;
+      }
+      .grid-line {
+        stroke: #4477aa;
+        stroke-width: 3;
+        fill: none;
+      }
+      .quadrant1 { fill: #4477aa; } /* Protect People - Dark Blue */
+      .quadrant2 { fill: #7db8da; } /* Grow People - Medium Blue */
+      .quadrant3 { fill: #b6d7ea; } /* Protect Systems - Light Blue */
+      .quadrant4 { fill: #d4e6f1; } /* Grow Systems - Very Light Blue */
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="300" y="50" class="matrix-title">Protecting and Growing,</text>
+  <text x="300" y="72" class="matrix-title">People and Systems</text>
+
+  <!-- Matrix Background -->
+  <rect x="100" y="150" width="400" height="400" fill="white" stroke="#4477aa" stroke-width="2"/>
+
+  <!-- Quadrants -->
+  <!-- Q1: Protect People (top-left) -->
+  <rect x="100" y="150" width="200" height="200" class="quadrant1"/>
+
+  <!-- Q2: Grow People (top-right) -->
+  <rect x="300" y="150" width="200" height="200" class="quadrant2"/>
+
+  <!-- Q3: Protect Systems (bottom-left) -->
+  <rect x="100" y="350" width="200" height="200" class="quadrant3"/>
+
+  <!-- Q4: Grow Systems (bottom-right) -->
+  <rect x="300" y="350" width="200" height="200" class="quadrant4"/>
+
+  <!-- Grid Lines -->
+  <line x1="300" y1="150" x2="300" y2="550" class="grid-line"/>
+  <line x1="100" y1="350" x2="500" y2="350" class="grid-line"/>
+
+  <!-- Quadrant Labels and Bullet Lists -->
+  <!-- Q1: Protect People -->
+  <text x="200" y="185" class="quadrant-label">PROTECT PEOPLE</text>
+  <text x="125" y="220" class="bullet-item">&#8226; Direction</text>
+  <text x="125" y="245" class="bullet-item">&#8226; Communication</text>
+  <text x="125" y="270" class="bullet-item">&#8226; Growth</text>
+
+  <!-- Q2: Grow People -->
+  <text x="400" y="185" class="quadrant-label">GROW PEOPLE</text>
+  <text x="325" y="220" class="bullet-item">&#8226; Expectations</text>
+  <text x="325" y="245" class="bullet-item">&#8226; Support</text>
+  <text x="325" y="270" class="bullet-item">&#8226; Rewards</text>
+
+  <!-- Q3: Protect Systems -->
+  <text x="200" y="385" class="quadrant-label">PROTECT SYSTEMS</text>
+  <text x="125" y="420" class="bullet-item">&#8226; Standards</text>
+  <text x="125" y="445" class="bullet-item">&#8226; Controls</text>
+  <text x="125" y="470" class="bullet-item">&#8226; Verification</text>
+
+  <!-- Q4: Grow Systems -->
+  <text x="400" y="385" class="quadrant-label">GROW SYSTEMS</text>
+  <text x="325" y="420" class="bullet-item">&#8226; Connection to impact</text>
+  <text x="325" y="445" class="bullet-item">&#8226; Aligned plans</text>
+  <text x="325" y="470" class="bullet-item">&#8226; Delivery performance</text>
+
+  <!-- Axis Labels -->
+  <!-- Top: People -->
+  <text x="300" y="115" class="axis-label">PEOPLE</text>
+
+  <!-- Bottom: Systems -->
+  <text x="300" y="595" class="axis-label">SYSTEMS</text>
+
+  <!-- Left: Protect -->
+  <text x="65" y="350" class="axis-label" transform="rotate(-90 65 350)">PROTECT</text>
+
+  <!-- Right: Grow -->
+  <text x="535" y="350" class="axis-label" transform="rotate(90 535 350)">GROW</text>
+</svg>
