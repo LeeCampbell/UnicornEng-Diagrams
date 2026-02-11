@@ -1,0 +1,150 @@
+<svg width="846" height="634" viewBox="49 -32 846 634" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .layer-title {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+      .layer-divider {
+        stroke: #343a40;
+        stroke-width: 1;
+      }
+      .section-label {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        text-anchor: middle;
+        fill: #343a40;
+      }
+      .flow-arrow {
+        stroke: #4477aa;
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+      .signal-arrow {
+        stroke: #4477aa;
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+      .flow-label {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        fill: #343a40;
+      }
+      .flow-sublabel {
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        fill: #6c757d;
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4477aa" />
+    </marker>
+    <!-- Clip paths for each layer box -->
+    <clipPath id="clipLayer3">
+      <rect x="270" y="60" width="460" height="110" rx="8" ry="8" />
+    </clipPath>
+    <clipPath id="clipLayer2">
+      <rect x="270" y="250" width="460" height="110" rx="8" ry="8" />
+    </clipPath>
+    <clipPath id="clipLayer1">
+      <rect x="270" y="440" width="460" height="110" rx="8" ry="8" />
+    </clipPath>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#4477aa">
+    Engineering Nervous System
+  </text>
+
+  <!-- Layer 3: Reality & Learning (y=60-170) -->
+  <g>
+    <rect x="270" y="60" width="460" height="110" rx="8" ry="8" fill="#7db8da" stroke="#4477aa" stroke-width="2" />
+    <rect x="270" y="60" width="460" height="30" fill="#4477aa" clip-path="url(#clipLayer3)" />
+    <line x1="270" y1="90" x2="730" y2="90" stroke="#4477aa" stroke-width="2" />
+
+    <text x="500" y="82" class="layer-title" fill="white">Layer 3: Reality &amp; Learning</text>
+
+    <!-- Vertical dividers (3 sections, each ~153px) -->
+    <line x1="423" y1="95" x2="423" y2="165" class="layer-divider" />
+    <line x1="577" y1="95" x2="577" y2="165" class="layer-divider" />
+
+    <text x="347" y="134" class="section-label">Incident Response</text>
+    <text x="500" y="134" class="section-label">Experiments</text>
+    <text x="654" y="134" class="section-label">BI / Data Science</text>
+  </g>
+
+  <!-- Layer 2: System Integrity (y=250-360) -->
+  <g>
+    <rect x="270" y="250" width="460" height="110" rx="8" ry="8" fill="#b6d7ea" stroke="#4477aa" stroke-width="2" />
+    <rect x="270" y="250" width="460" height="30" fill="#7db8da" clip-path="url(#clipLayer2)" />
+    <line x1="270" y1="280" x2="730" y2="280" stroke="#4477aa" stroke-width="2" />
+
+    <text x="500" y="272" class="layer-title" fill="#343a40">Layer 2: System Integrity</text>
+
+    <!-- Vertical dividers (5 sections, each 92px) -->
+    <line x1="362" y1="285" x2="362" y2="355" class="layer-divider" />
+    <line x1="454" y1="285" x2="454" y2="355" class="layer-divider" />
+    <line x1="546" y1="285" x2="546" y2="355" class="layer-divider" />
+    <line x1="638" y1="285" x2="638" y2="355" class="layer-divider" />
+
+    <text x="316" y="324" class="section-label">UX</text>
+    <text x="408" y="324" class="section-label">Architecture</text>
+    <text x="500" y="324" class="section-label">Security</text>
+    <text x="592" y="324" class="section-label">SRE</text>
+    <text x="684" y="324" class="section-label">Data</text>
+  </g>
+
+  <!-- Layer 1: Design & Delivery (y=440-550) -->
+  <g>
+    <rect x="270" y="440" width="460" height="110" rx="8" ry="8" fill="#d4e6f1" stroke="#4477aa" stroke-width="2" />
+    <rect x="270" y="440" width="460" height="30" fill="#b6d7ea" clip-path="url(#clipLayer1)" />
+    <line x1="270" y1="470" x2="730" y2="470" stroke="#4477aa" stroke-width="2" />
+
+    <text x="500" y="462" class="layer-title" fill="#343a40">Layer 1: Design &amp; Delivery</text>
+
+    <!-- Vertical dividers (3 sections) -->
+    <line x1="423" y1="475" x2="423" y2="545" class="layer-divider" />
+    <line x1="577" y1="475" x2="577" y2="545" class="layer-divider" />
+
+    <text x="347" y="514" class="section-label">Design</text>
+    <text x="500" y="514" class="section-label">Coding</text>
+    <text x="654" y="514" class="section-label">Review</text>
+  </g>
+
+  <!-- Right-side upward flow arrows (routed paths exiting/entering boxes) -->
+  <g>
+    <!-- L1 → L2: exits right of L1, routes up, enters right of L2 -->
+    <path d="M730,500 H770 V310 H730" class="flow-arrow" />
+    <text x="785" y="398" class="flow-label" text-anchor="start">Systems</text>
+    <text x="785" y="412" class="flow-label" text-anchor="start">are built</text>
+
+    <!-- L2 → L3: exits right of L2, routes up, enters right of L3 -->
+    <path d="M730,300 H770 V130 H730" class="flow-arrow" />
+    <text x="785" y="208" class="flow-label" text-anchor="start">Reality</text>
+    <text x="785" y="222" class="flow-label" text-anchor="start">emerges</text>
+  </g>
+
+  <!-- Left-side downward signal arrows (routed paths exiting/entering boxes) -->
+  <g>
+    <!-- L3 → L1: exits left of L3, routes far left, down, enters left of L1 (lower entry) -->
+    <path d="M270,130 H100 V510 H270" class="signal-arrow" />
+    <text x="205" y="200" class="flow-label" text-anchor="middle">Operational</text>
+    <text x="205" y="214" class="flow-label" text-anchor="middle">signals</text>
+    <text x="205" y="234" class="flow-sublabel" text-anchor="middle">(incidents,</text>
+    <text x="205" y="248" class="flow-sublabel" text-anchor="middle">experiments,</text>
+    <text x="205" y="262" class="flow-sublabel" text-anchor="middle">BI/DS)</text>
+
+    <!-- L2 → L1: exits left of L2, routes left, down, enters left of L1 (upper entry) -->
+    <path d="M270,320 H140 V490 H270" class="signal-arrow" />
+    <text x="205" y="388" class="flow-label" text-anchor="middle">Integrity signals</text>
+    <text x="205" y="408" class="flow-sublabel" text-anchor="middle">(reliability,</text>
+    <text x="205" y="422" class="flow-sublabel" text-anchor="middle">security, data,</text>
+    <text x="205" y="436" class="flow-sublabel" text-anchor="middle">architecture)</text>
+  </g>
+</svg>
