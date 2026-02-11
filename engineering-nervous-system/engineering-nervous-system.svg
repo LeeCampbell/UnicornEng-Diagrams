@@ -68,15 +68,17 @@
     <rect x="270" y="60" width="460" height="30" fill="#4477aa" clip-path="url(#clipLayer3)" />
     <line x1="270" y1="90" x2="730" y2="90" stroke="#4477aa" stroke-width="2" />
 
-    <text x="500" y="82" class="layer-title" fill="white">Layer 3: Reality &amp; Learning</text>
+    <text x="500" y="82" class="layer-title" fill="white">Layer 3: The Senses (Reality &amp; Learning)</text>
 
-    <!-- Vertical dividers (3 sections, each ~153px) -->
-    <line x1="423" y1="95" x2="423" y2="165" class="layer-divider" />
-    <line x1="577" y1="95" x2="577" y2="165" class="layer-divider" />
+    <!-- Vertical dividers (4 sections, each 115px) -->
+    <line x1="385" y1="95" x2="385" y2="165" class="layer-divider" />
+    <line x1="500" y1="95" x2="500" y2="165" class="layer-divider" />
+    <line x1="615" y1="95" x2="615" y2="165" class="layer-divider" />
 
-    <text x="347" y="134" class="section-label">Incident Response</text>
-    <text x="500" y="134" class="section-label">Experiments</text>
-    <text x="654" y="134" class="section-label">BI / Data Science</text>
+    <text x="327" y="134" class="section-label">Incident Response</text>
+    <text x="442" y="134" class="section-label">Observability</text>
+    <text x="557" y="134" class="section-label">Experiments</text>
+    <text x="672" y="134" class="section-label">BI / Data Science</text>
   </g>
 
   <!-- Layer 2: System Integrity (y=250-360) -->
@@ -85,7 +87,7 @@
     <rect x="270" y="250" width="460" height="30" fill="#7db8da" clip-path="url(#clipLayer2)" />
     <line x1="270" y1="280" x2="730" y2="280" stroke="#4477aa" stroke-width="2" />
 
-    <text x="500" y="272" class="layer-title" fill="#343a40">Layer 2: System Integrity</text>
+    <text x="500" y="272" class="layer-title" fill="#343a40">Layer 2: The Immune System (System Integrity)</text>
 
     <!-- Vertical dividers (5 sections, each 92px) -->
     <line x1="362" y1="285" x2="362" y2="355" class="layer-divider" />
@@ -106,7 +108,7 @@
     <rect x="270" y="440" width="460" height="30" fill="#b6d7ea" clip-path="url(#clipLayer1)" />
     <line x1="270" y1="470" x2="730" y2="470" stroke="#4477aa" stroke-width="2" />
 
-    <text x="500" y="462" class="layer-title" fill="#343a40">Layer 1: Design &amp; Delivery</text>
+    <text x="500" y="462" class="layer-title" fill="#343a40">Layer 1: The Motor Cortex (Design &amp; Delivery)</text>
 
     <!-- Vertical dividers (3 sections) -->
     <line x1="423" y1="475" x2="423" y2="545" class="layer-divider" />
